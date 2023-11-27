@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Lexend+Deca:wght@200&family=Martian+Mono:wght@300&family=Nunito:wght@300&family=Open+Sans:wght@300;400&family=Pixelify+Sans&family=Poppins:wght@200;400&family=Roboto:wght@300&family=Rubik:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">QUICK BRAINER</h1>
+        </nav>
+    </header>
+    <div id="timer"></div>
+    <div class="container_main">
+        <button id="starts" class="btn" onclick="start()">Start Quiz</button>
+        <div id="quesContainer" class="hide">
+            <div id="ques" class="question"></div>
+            <h3 id="title" class="titles"></h3>
+            <div id="contOptions" class="optionStyle"></div>
+            <button id="nexts" class="BtnN" onclick="next()">Next</button>
+        </div>
+        <button id="results" class="hide" onclick="result()">Result</button>
+        <div id="marks" class="hide"></div>
+        <button id="restarts" class="hide" onclick="restart()">Restart</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

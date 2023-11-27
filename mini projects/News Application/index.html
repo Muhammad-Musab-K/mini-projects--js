@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickin News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calistoga&family=Lato:wght@300;400&family=Lexend+Deca:wght@200&family=Martian+Mono:wght@300&family=Nunito:wght@300&family=Open+Sans:wght@300;400&family=Pixelify+Sans&family=Poppins:wght@200;400&family=Roboto:wght@300&family=Rubik:wght@300&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="cover">
+    <header>
+        <nav>
+            <h1 id="logo" class="logo">Quicken<span>News</span></h1>
+            <div>
+               <ul class="list">
+                <a href=""><li>Explore</li></a>
+                <a href=""><li>Post</li></a>
+                <a href=""><li>Articles</li></a>
+               </ul>
+            </div>
+        </nav>
+        <div class="nav_down">
+            <h1>Search for being updated with the World!</h1>
+            <div>
+             <input class="input" type="search" id="search" placeholder="search">
+                <button class="bton" id="summit" type="summit" onclick="getData()">Search</button></div>
+        </div>
+       
+    </header>
+    <main>
+        <div class="nav_two">
+            <button type="button" class="btn" onclick="getData()">Sports</button>
+            <button type="button" class="btn" onclick="getData()">Tesla</button>
+            <button type="button" class="btn" onclick="getData()">Karachi</button>
+            <button type="button" class="btn" onclick="getData()">Politics</button>
+        </div>
+       
+        <div id="box" class="row">
+
+        </div>
+    </main>
+
+</div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Lexend+Deca:wght@200&family=Martian+Mono:wght@300&family=Nunito:wght@300&family=Pixelify+Sans&family=Poppins:wght@200;400&family=Roboto:wght@300&family=Rubik:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+    <div class="main_container">
+    <header>
+        <nav>
+            <h1>Seasons</h1>
+            <div><input id="input_weather" class="input_search" type="search" placeholder="search ">
+            <button id="weather_btn" onclick="weather()" class="btn">Search</button></div>
+        </nav>
+    </header>
+    <main id="container">
+       <div class="heading_Weather"><h1 id="weather_of">Weather of _______</h1></div>
+        <div class="card">
+            <div class="upper">
+                <h1 id="heading" class="temp"></h1>
+                <img id="icon" alt="">
+                <div id="descrip"></div>
+            </div>
+            <hr>
+            <div class="descrip">
+                <div class="box" id="humi"></div>
+                <div class="box" id="max-Temp"></div>
+                <div class="box" id="min-Temp"></div>
+                <div class="box" id="feels_like"></div>
+                <div class="box" id="sunrise"></div>
+                <div class="box" id="sunset"></div>
+            </div>
+        </div>
+    </main>
+</div>
+    
+
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
